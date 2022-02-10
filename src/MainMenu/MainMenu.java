@@ -26,7 +26,7 @@ public class MainMenu {
 
         frame = new JFrame("Main Menu");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(500, 450));
+        frame.setPreferredSize(new Dimension(800, 500));
         frame.setResizable(false);
 
         frame.add(Panel3);
