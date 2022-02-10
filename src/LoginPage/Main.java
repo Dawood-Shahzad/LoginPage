@@ -6,9 +6,9 @@ import TransferMarket.TransferMarket;
 public class Main {
     public static void main(String[] args) {
 
-        new RegistartionPage();
+        //new RegistartionPage();
         new LoginPage();
-        new TransferMarket();
+        //new TransferMarket();
 
     }
 }

@@ -1,9 +1,12 @@
 package RegistrationPage;
 
+import LoginPage.LoginPage;
 import javafx.fxml.FXML;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class RegistartionPage extends RegistrationPage {
     private JPanel panel1;
@@ -29,5 +32,11 @@ public class RegistartionPage extends RegistrationPage {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+        backToLoginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new LoginPage();
+            }
+        });
     }
 }
