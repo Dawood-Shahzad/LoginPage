@@ -1,9 +1,11 @@
 package YouthAcademy;
 
+import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
 import Stats.Stats;
 import Tables.Tables;
+import Training.Training;
 import TransferMarket.TransferMarket;
 
 import javax.swing.*;
@@ -83,6 +85,18 @@ public class YouthAcademy {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
             }
         });
     }

@@ -1,8 +1,10 @@
 package Squad;
 
+import Facilities.Facilities;
 import Settings.Settings1;
 import Stats.Stats;
 import Tables.Tables;
+import Training.Training;
 import TransferMarket.TransferMarket;
 import YouthAcademy.YouthAcademy;
 import javafx.scene.control.Tab;
@@ -65,6 +67,18 @@ public class Squad {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
             }
         });
     }

@@ -1,6 +1,8 @@
 package MainMenu;
 
+import Facilities.Facilities;
 import Squad.Squad;
+import Training.Training;
 import TransferMarket.TransferMarket;
 
 import javax.swing.*;
@@ -44,6 +46,18 @@ public class MainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Squad();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
             }
         });
     }

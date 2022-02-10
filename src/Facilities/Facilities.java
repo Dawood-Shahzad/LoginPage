@@ -1,20 +1,19 @@
-package Tables;
+package Facilities;
 
-import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
 import Stats.Stats;
+import Tables.Tables;
 import Training.Training;
 import TransferMarket.TransferMarket;
 import YouthAcademy.YouthAcademy;
-import com.sun.tools.javac.util.Name;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Tables {
+public class Facilities {
     private JButton training;
     private JButton squad;
     private JButton transferMarket;
@@ -22,26 +21,40 @@ public class Tables {
     private JButton facilities;
     private JButton staff;
     private JButton leagueTableCupCompetitions;
-    private JButton seasonStats;
+    private JButton playerStats;
     private JButton settings;
     private JButton nextWeek;
-    private JPanel Panel4;
+    private JButton UPGRADEButton;
+    private JButton UPGRADEButton1;
+    private JPanel Panel8;
     private JFrame frame;
 
-    public Tables() {
+    public Facilities() {
 
-        frame = new JFrame("Tables");
+        frame = new JFrame("Facilites");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(1500, 600));
+        frame.setPreferredSize(new Dimension(300, 250));
         frame.setResizable(false);
 
-        frame.add(Panel4);
+        frame.add(Panel8);
 
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
 
+        UPGRADEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Anfield();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
         squad.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -60,13 +73,19 @@ public class Tables {
                 new YouthAcademy();
             }
         });
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
+            }
+        });
         leagueTableCupCompetitions.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Tables();
             }
         });
-        seasonStats.addActionListener(new ActionListener() {
+        playerStats.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Stats();
@@ -76,18 +95,6 @@ public class Tables {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
-            }
-        });
-        training.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Training();
-            }
-        });
-        facilities.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Facilities();
             }
         });
     }

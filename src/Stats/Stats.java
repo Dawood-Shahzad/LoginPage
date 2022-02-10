@@ -1,8 +1,10 @@
 package Stats;
 
+import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
 import Tables.Tables;
+import Training.Training;
 import TransferMarket.TransferMarket;
 import YouthAcademy.YouthAcademy;
 
@@ -73,6 +75,18 @@ public class Stats {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
             }
         });
     }

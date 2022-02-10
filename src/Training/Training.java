@@ -1,10 +1,10 @@
-package Settings;
+package Training;
 
 import Facilities.Facilities;
+import Settings.Settings1;
 import Squad.Squad;
 import Stats.Stats;
 import Tables.Tables;
-import Training.Training;
 import TransferMarket.TransferMarket;
 import YouthAcademy.YouthAcademy;
 
@@ -13,39 +13,79 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Settings1 {
+public class Training {
     private JButton training;
     private JButton squad;
     private JButton transferMarket;
     private JButton youthAcademy;
-    private JButton facilities;
+    private JButton facilites;
     private JButton staff;
     private JButton leagueTableCupCompetitions;
     private JButton playerStats;
-    private JButton settings;
     private JButton nextWeek;
-    private JButton SAVEGAMEButton;
-    private JButton MAINMENUButton;
-    private JButton SOUNDButton;
-    private JButton CURRENCYButton;
-    private JButton HELPButton;
-    private JPanel Panel3;
+    private JButton settings;
+    private JButton GOALKEEPINGButton;
+    private JButton DEFENDINGButton;
+    private JButton PASSINGButton;
+    private JButton DRIBBLINGButton;
+    private JButton PACEButton;
+    private JButton SHOOTINGButton;
+    private JPanel Panel5;
     private JFrame frame;
 
-    public Settings1() {
-
-        frame = new JFrame("Settings");
-        //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(800, 600));
+    public Training() {
+        frame = new JFrame("Training");
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setPreferredSize(new Dimension(500, 450));
         frame.setResizable(false);
 
-        frame.add(Panel3);
+        frame.add(Panel5);
 
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
-
-
+        GOALKEEPINGButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        DEFENDINGButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        PASSINGButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        DRIBBLINGButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        PACEButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        SHOOTINGButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Players();
+            }
+        });
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
         squad.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -82,13 +122,7 @@ public class Settings1 {
                 new Settings1();
             }
         });
-        training.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Training();
-            }
-        });
-        facilities.addActionListener(new ActionListener() {
+        facilites.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
