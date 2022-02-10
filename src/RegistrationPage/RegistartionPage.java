@@ -1,6 +1,7 @@
 package RegistrationPage;
 
 import LoginPage.LoginPage;
+import MainMenu.MainMenu;
 import javafx.fxml.FXML;
 
 import javax.swing.*;
@@ -36,6 +37,12 @@ public class RegistartionPage extends RegistrationPage {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new LoginPage();
+            }
+        });
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MainMenu();
             }
         });
     }
