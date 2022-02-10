@@ -1,57 +1,39 @@
-package YouthAcademy;
+package Staff;
 
 import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
-import Staff.Staff;
 import Stats.Stats;
 import Tables.Tables;
 import Training.Training;
 import TransferMarket.TransferMarket;
+import YouthAcademy.YouthAcademy;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class YouthAcademy {
+public class Staff {
     private JButton training;
     private JButton squad;
     private JButton transferMarket;
     private JButton youthAcademy;
     private JButton facilities;
     private JButton staff;
-    private JButton leagueTablesCupCompetitions;
+    private JButton leagueTableCupCompetitions;
     private JButton playerStats;
     private JButton settings;
     private JButton nextWeek;
-    private JButton PROMOTEButton;
-    private JButton PROMOTEButton1;
-    private JButton PROMOTEButton2;
-    private JButton PROMOTEButton3;
-    private JButton PROMOTEButton4;
-    private JButton RELEASEButton;
-    private JButton RELEASEButton1;
-    private JButton RELEASEButton2;
-    private JButton RELEASEButton3;
-    private JButton RELEASEButton4;
-    private JPanel Panel2;
+    private JButton HIRENEWSTAFFButton;
     private JFrame frame;
 
-    public YouthAcademy() {
-
-        frame = new JFrame("Youth Academy");
-        //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(1200, 600));
-        frame.setResizable(false);
-
-        frame.add(Panel2);
-
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-
+    public Staff() {
+        training.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Training();
+            }
+        });
         squad.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -70,7 +52,19 @@ public class YouthAcademy {
                 new YouthAcademy();
             }
         });
-        leagueTablesCupCompetitions.addActionListener(new ActionListener() {
+        facilities.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Facilities();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
+            }
+        });
+        leagueTableCupCompetitions.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Tables();
@@ -86,24 +80,6 @@ public class YouthAcademy {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
-            }
-        });
-        training.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Training();
-            }
-        });
-        facilities.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Facilities();
-            }
-        });
-        staff.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Staff();
             }
         });
     }

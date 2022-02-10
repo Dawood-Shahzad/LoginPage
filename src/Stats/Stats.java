@@ -3,6 +3,7 @@ package Stats;
 import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
+import Staff.Staff;
 import Tables.Tables;
 import Training.Training;
 import TransferMarket.TransferMarket;
@@ -87,6 +88,12 @@ public class Stats {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }

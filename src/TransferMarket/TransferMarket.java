@@ -3,6 +3,7 @@ package TransferMarket;
 import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
+import Staff.Staff;
 import Stats.Stats;
 import Tables.Tables;
 import Training.Training;
@@ -85,6 +86,12 @@ public class TransferMarket {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
+            }
+        });
+        staffButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }

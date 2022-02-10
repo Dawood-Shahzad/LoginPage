@@ -2,6 +2,7 @@ package Facilities;
 
 import Settings.Settings1;
 import Squad.Squad;
+import Staff.Staff;
 import Stats.Stats;
 import Tables.Tables;
 import Training.Training;
@@ -95,6 +96,12 @@ public class Facilities {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Settings1();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }

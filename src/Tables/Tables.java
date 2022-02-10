@@ -3,6 +3,7 @@ package Tables;
 import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
+import Staff.Staff;
 import Stats.Stats;
 import Training.Training;
 import TransferMarket.TransferMarket;
@@ -88,6 +89,12 @@ public class Tables {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }

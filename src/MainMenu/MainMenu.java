@@ -2,6 +2,7 @@ package MainMenu;
 
 import Facilities.Facilities;
 import Squad.Squad;
+import Staff.Staff;
 import Training.Training;
 import TransferMarket.TransferMarket;
 
@@ -58,6 +59,12 @@ public class MainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }

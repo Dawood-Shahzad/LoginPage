@@ -3,6 +3,7 @@ package Training;
 import Facilities.Facilities;
 import Settings.Settings1;
 import Squad.Squad;
+import Staff.Staff;
 import Stats.Stats;
 import Tables.Tables;
 import TransferMarket.TransferMarket;
@@ -126,6 +127,12 @@ public class Training {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Facilities();
+            }
+        });
+        staff.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Staff();
             }
         });
     }
