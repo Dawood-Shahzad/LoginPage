@@ -1,7 +1,15 @@
 package TransferMarket;
 
+import Settings.Settings1;
+import Squad.Squad;
+import Stats.Stats;
+import Tables.Tables;
+import YouthAcademy.YouthAcademy;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class TransferMarket {
     private JButton nextWeekButton;
@@ -29,6 +37,42 @@ public class TransferMarket {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+        squadButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Squad();
+            }
+        });
+        transferMarketButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new TransferMarket();
+            }
+        });
+        youthAcademyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new YouthAcademy();
+            }
+        });
+        leagueTableCupCompetitionsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Tables();
+            }
+        });
+        playerStatsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Stats();
+            }
+        });
+        settingsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Settings1();
+            }
+        });
     }
 
 }

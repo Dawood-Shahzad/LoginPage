@@ -1,7 +1,15 @@
 package Settings;
 
+import Squad.Squad;
+import Stats.Stats;
+import Tables.Tables;
+import TransferMarket.TransferMarket;
+import YouthAcademy.YouthAcademy;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Settings1 {
     private JButton training;
@@ -36,5 +44,41 @@ public class Settings1 {
         frame.setVisible(true);
 
 
+        squad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Squad();
+            }
+        });
+        transferMarket.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new TransferMarket();
+            }
+        });
+        youthAcademy.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new YouthAcademy();
+            }
+        });
+        leagueTableCupCompetitions.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Tables();
+            }
+        });
+        playerStats.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Stats();
+            }
+        });
+        settings.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Settings1();
+            }
+        });
     }
 }
