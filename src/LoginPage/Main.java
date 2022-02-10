@@ -1,5 +1,6 @@
 package LoginPage;
 
+import MainMenu.MainMenu;
 import RegistrationPage.RegistartionPage;
 import TransferMarket.TransferMarket;
 

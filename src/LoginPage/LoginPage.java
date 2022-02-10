@@ -1,5 +1,6 @@
 package LoginPage;
 
+import MainMenu.MainMenu;
 import RegistrationPage.RegistartionPage;
 import javafx.fxml.FXML;
 
@@ -38,6 +39,12 @@ public class LoginPage extends JFrame{
             public void actionPerformed(ActionEvent e) {
                     new RegistartionPage();
                 }
+        });
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new MainMenu();
+            }
         });
     }
 

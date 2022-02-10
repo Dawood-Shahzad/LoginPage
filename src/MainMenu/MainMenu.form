@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainMenu.MainMenu">
+  <grid id="27dc6" binding="Panel3" layout-manager="GridLayoutManager" row-count="10" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <hspacer id="e1ec8">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="3315b">
+        <constraints>
+          <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="a4f23" class="javax.swing.JButton" binding="training">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="TRAINING"/>
+        </properties>
+      </component>
+      <component id="4977d" class="javax.swing.JButton" binding="squad">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SQUAD"/>
+        </properties>
+      </component>
+      <component id="8cffa" class="javax.swing.JButton" binding="transferMarket">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="TRANSFER MARKET"/>
+        </properties>
+      </component>
+      <component id="55d7a" class="javax.swing.JButton" binding="youthAcademy">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="YOUTH ACADEMY"/>
+        </properties>
+      </component>
+      <component id="9ffc7" class="javax.swing.JButton" binding="facilities">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="FACILITIES"/>
+        </properties>
+      </component>
+      <component id="bfecd" class="javax.swing.JButton" binding="staff">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="STAFF"/>
+        </properties>
+      </component>
+      <component id="84ea1" class="javax.swing.JButton" binding="leagueTableCupCompetitions">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="LEAGUE TABLE/CUP COMPETITIONS"/>
+        </properties>
+      </component>
+      <component id="2c476" class="javax.swing.JButton" binding="playerStats">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="PLAYER STATS"/>
+        </properties>
+      </component>
+      <component id="23c5c" class="javax.swing.JButton" binding="settings">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SETTINGS"/>
+        </properties>
+      </component>
+      <component id="2b98f" class="javax.swing.JButton" binding="nextWeek">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="NEXT WEEK"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
