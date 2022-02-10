@@ -1,14 +1,18 @@
-package MainMenu;
+package Squad;
 
-import Squad.Squad;
+import Settings.Settings1;
+import Stats.Stats;
+import Tables.Tables;
 import TransferMarket.TransferMarket;
+import YouthAcademy.YouthAcademy;
+import javafx.scene.control.Tab;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class MainMenu {
+public class Squad {
     private JButton training;
     private JButton squad;
     private JButton transferMarket;
@@ -19,17 +23,16 @@ public class MainMenu {
     private JButton playerStats;
     private JButton settings;
     private JButton nextWeek;
-    private JPanel Panel3;
+    private JPanel Panel6;
     private JFrame frame;
 
-    public MainMenu() {
-
-        frame = new JFrame("Main Menu");
+    public Squad() {
+        frame=new JFrame("Squad");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setPreferredSize(new Dimension(500, 450));
         frame.setResizable(false);
 
-        frame.add(Panel3);
+        frame.add(Panel6);
 
         frame.pack();
         frame.setLocationRelativeTo(null);
@@ -40,11 +43,29 @@ public class MainMenu {
                 new TransferMarket();
             }
         });
-        squad.addActionListener(new ActionListener() {
+        youthAcademy.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new Squad();
+                new YouthAcademy();
+            }
+        });
+        leagueTableCupCompetitions.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Tables();
+            }
+        });
+        playerStats.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Stats();
+            }
+        });
+        settings.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Settings1();
             }
         });
     }
-    }
+}
