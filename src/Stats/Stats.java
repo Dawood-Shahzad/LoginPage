@@ -32,7 +32,7 @@ public class Stats {
 
         frame = new JFrame("Stats");
         //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(800, 600));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(Panel1);

@@ -25,7 +25,7 @@ public class RegistartionPage extends RegistrationPage {
 
         frame=new JFrame("Register");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(500, 450));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(panel1);

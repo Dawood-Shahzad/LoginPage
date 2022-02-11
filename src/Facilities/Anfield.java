@@ -18,7 +18,7 @@ public class Anfield {
 
         frame=new JFrame("Anfield");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(300, 250));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(Panel9);

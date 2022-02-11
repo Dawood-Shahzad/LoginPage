@@ -32,7 +32,7 @@ public class TransferMarket {
     public TransferMarket() {
         frame=new JFrame("TransferMarket");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(500, 450));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(Panel3);

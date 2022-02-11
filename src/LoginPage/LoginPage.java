@@ -24,7 +24,7 @@ public class LoginPage extends JFrame{
 
         frame=new JFrame("Login");
         frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(300, 250));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(panel1);

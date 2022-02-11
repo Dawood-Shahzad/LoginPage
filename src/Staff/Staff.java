@@ -10,6 +10,7 @@ import TransferMarket.TransferMarket;
 import YouthAcademy.YouthAcademy;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -25,9 +26,22 @@ public class Staff {
     private JButton settings;
     private JButton nextWeek;
     private JButton HIRENEWSTAFFButton;
+    private JPanel Panel9;
     private JFrame frame;
 
     public Staff() {
+
+        frame = new JFrame("Staff");
+        //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setPreferredSize(new Dimension(1500, 600));
+        frame.setResizable(false);
+
+        frame.add(Panel9);
+
+        frame.pack();
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+
         training.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

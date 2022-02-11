@@ -42,7 +42,7 @@ public class YouthAcademy {
 
         frame = new JFrame("Youth Academy");
         //frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(1200, 600));
+        frame.setPreferredSize(new Dimension(1500, 600));
         frame.setResizable(false);
 
         frame.add(Panel2);
